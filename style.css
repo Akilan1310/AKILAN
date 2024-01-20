@@ -1,0 +1,26 @@
+.Container{
+display:inline grid;
+grid-template-columns: repeat(3,1fr);
+gap:30px;
+background-color:blue;
+
+}
+.Item{
+    padding: 30px;
+    background-color: aqua;
+    border: 3px solid #000;
+    align-items:center;
+    text-align:end;
+}
+@media( max-width:425px){
+    .Container{grid-template-columns: repeat(2,1fr);}
+}
+@media(min-width:768px)
+{
+    .Container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(min-width:900px){
+    .Container{grid-template-columns: repeat(4,1fr);}
+}
